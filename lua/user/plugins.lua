@@ -28,7 +28,6 @@ lvim.plugins = {
   "kevinhwang91/nvim-bqf",
   "is0n/jaq-nvim",
   "hrsh7th/cmp-emoji",
-  "ggandor/leap.nvim",
   "nacro90/numb.nvim",
   "TimUntersberger/neogit",
   "sindrets/diffview.nvim",
@@ -100,10 +99,12 @@ lvim.plugins = {
       require("better_escape").setup()
     end,
   },
-  {"hrsh7th/cmp-cmdline"},
+  { "hrsh7th/cmp-cmdline" },
   { "fedepujol/move.nvim" },
   { "mg979/vim-visual-multi", branch = "master" },
   { "turbio/bracey.vim", run = "npm install --prefix server" },
+  { "phaazon/hop.nvim" },
+  { "akinsho/toggleterm.nvim" }
   -- {
   --   "folke/noice.nvim",
   --   event = "VimEnter",

@@ -1,6 +1,6 @@
 lvim.builtin.which_key.mappings["b"] = { "<cmd>Telescope buffers<cr>", "Buffers" }
 lvim.builtin.which_key.mappings["v"] = { "<cmd>vsplit<cr>", "vsplit" }
-lvim.builtin.which_key.mappings["h"] = { "<cmd>nohlsearch<cr>", "nohl" }
+lvim.builtin.which_key.mappings["h"] = { "<cmd>split<cr>", "split" }
 lvim.builtin.which_key.mappings["q"] = { '<cmd>lua require("user.functions").smart_quit()<CR>', "Quit" }
 lvim.builtin.which_key.mappings["/"] = { '<cmd>lua require("Comment.api").toggle.linewise.current()<CR>', "Comment" }
 lvim.builtin.which_key.mappings["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" }
@@ -113,14 +113,25 @@ lvim.builtin.which_key.mappings["l"] = {
   u = { "<cmd>LuaSnipUnlinkCurrent<cr>", "Unlink Snippet" },
 }
 lvim.builtin.which_key.mappings["t"] = {
-  name = "Tab",
-  t = {
-    "<cmd>lua require('telescope').extensions['telescope-tabs'].list_tabs(require('telescope.themes').get_dropdown{previewer = false, initial_mode='normal', prompt_title='Tabs'})<cr>",
-    "Find Tab",
-  },
-  n = { "<cmd>tabnew %<cr>", "New Tab" },
-  c = { "<cmd>tabclose<cr>", "Close Tab" },
-  o = { "<cmd>tabonly<cr>", "Only Tab" },
+  name = "Terminal",
+  -- t = {
+  --   "<cmd>lua require('telescope').extensions['telescope-tabs'].list_tabs(require('telescope.themes').get_dropdown{previewer = false, initial_mode='normal', prompt_title='Tabs'})<cr>",
+  --   "Find Tab",
+  -- },
+  -- n = { "<cmd>tabnew %<cr>", "New Tab" },
+  -- c = { "<cmd>tabclose<cr>", "Close Tab" },
+  -- o = { "<cmd>tabonly<cr>", "Only Tab" },
+  ["1"] = { ":1ToggleTerm<cr>", "1" },
+  ["2"] = { ":2ToggleTerm<cr>", "2" },
+  ["3"] = { ":3ToggleTerm<cr>", "3" },
+  ["4"] = { ":4ToggleTerm<cr>", "4" },
+  n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
+  u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
+  t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
+  p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
+  f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
+  h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
+  v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
 }
 -- lvim.builtin.cmp.enabled = false
 lvim.builtin.which_key.mappings["o"] = {

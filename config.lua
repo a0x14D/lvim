@@ -26,5 +26,6 @@ reload "user.lualine"
 reload "user.scrollbar"
 reload "user.zk"
 reload "user.move"
-reload "user.jaq"
+reload "user.hop"
+reload "user.toggleterm"
 
