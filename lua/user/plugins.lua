@@ -104,7 +104,6 @@ lvim.plugins = {
   { "mg979/vim-visual-multi", branch = "master" },
   { "turbio/bracey.vim", run = "npm install --prefix server" },
   { "phaazon/hop.nvim" },
-  { "akinsho/toggleterm.nvim" }
   -- {
   --   "folke/noice.nvim",
   --   event = "VimEnter",
