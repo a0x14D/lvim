@@ -156,6 +156,13 @@ lvim.builtin.which_key.mappings["n"] = {
   t = { "<cmd>Telekasten toggle_todo<cr>", "Toggle Todo" },
 }
 
+lvim.builtin.which_key.mappings["C"] = {
+   name = "ChatGPT",
+    c = { "<cmd>ChatGPT<cr>", "Chat" },
+    t = { "<cmd>ChatGPTActAs<cr>", "chatgptactas" },
+    s = { "<cmd>ChatGPTEditWithInstructions<cr>", "chatgpt code" },
+}
+
 lvim.builtin.which_key.mappings[";"] = nil
 lvim.builtin.which_key.mappings["c"] = nil
 lvim.builtin.which_key.mappings["L"] = nil
