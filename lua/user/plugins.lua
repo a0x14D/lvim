@@ -104,6 +104,17 @@ lvim.plugins = {
   { "mg979/vim-visual-multi", branch = "master" },
   { "turbio/bracey.vim", run = "npm install --prefix server" },
   { "phaazon/hop.nvim" },
+  {
+  "jackMort/ChatGPT.nvim",
+    config = function()
+      require("chatgpt").setup({
+        -- optional configuration
+      })
+    end,
+    requires = {
+      "MunifTanjim/nui.nvim"
+    }
+},
   -- {
   --   "folke/noice.nvim",
   --   event = "VimEnter",
