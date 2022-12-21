@@ -28,4 +28,4 @@ reload "user.zk"
 reload "user.move"
 reload "user.hop"
 reload "user.toggleterm"
-
+reload "user.copilot"

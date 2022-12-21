@@ -105,15 +105,10 @@ lvim.plugins = {
   { "turbio/bracey.vim", run = "npm install --prefix server" },
   { "phaazon/hop.nvim" },
   {
-  "jackMort/ChatGPT.nvim",
-    config = function()
-      require("chatgpt").setup({
-        -- optional configuration
-      })
-    end,
-    requires = {
-      "MunifTanjim/nui.nvim"
-    }
+  "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+  config = function()
+    require("lsp_lines").setup()
+  end,
 },
   -- {
   --   "folke/noice.nvim",

@@ -2,7 +2,7 @@ lvim.colorscheme = "tokyonight"
 lvim.log.level = "warn"
 lvim.builtin.alpha.active = true
 lvim.lsp.diagnostics.float.focusable = true
-lvim.builtin.illuminate.active = false
+lvim.builtin.illuminate.active = true
 lvim.builtin.bufferline.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
@@ -12,8 +12,13 @@ lvim.builtin.breadcrumbs.active = true
 lvim.builtin.treesitter.highlight.enabled = true
 lvim.builtin.dap.active = true
 lvim.builtin.cmp.cmdline.enable = true
-lvim.builtin.cmp.window.documentation = false
+lvim.builtin.cmp.window.documentation = true
+lvim.reload_config_on_save = true
 lvim.builtin.cmp.window.completion = {
+  border = "rounded",
+  winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
+}
+lvim.builtin.cmp.window.documentation = {
   border = "rounded",
   winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
 }
@@ -30,6 +35,7 @@ lvim.builtin.cmp.formatting.source_names = {
   copilot = "[COPILOT]",
   treesitter = "[TREESITTER]",
 }
+--lvim cmp format menu items
 -- vim.g.netrw_browse_split = 0
 -- vim.g.netrw_banner = 0
 -- vim.g.netrw_winsize = 25
