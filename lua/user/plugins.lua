@@ -1,3 +1,11 @@
+-- Autocommand that reloads neovim whenever you save the plugins.lua file
+vim.cmd [[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  augroup end
+]]
+
 -- Additional Plugins
 lvim.plugins = {
   "ellisonleao/gruvbox.nvim",
@@ -12,7 +20,6 @@ lvim.plugins = {
   "kylechui/nvim-surround",
   "christianchiarulli/harpoon",
   "MattesGroeger/vim-bookmarks",
-  "NvChad/nvim-colorizer.lua",
   "ghillb/cybu.nvim",
   "moll/vim-bbye",
   "folke/todo-comments.nvim",
@@ -105,11 +112,23 @@ lvim.plugins = {
   { "turbio/bracey.vim", run = "npm install --prefix server" },
   { "phaazon/hop.nvim" },
   {
-  "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-  config = function()
-    require("lsp_lines").setup()
-  end,
-},
+    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+    config = function()
+      require("lsp_lines").setup()
+    end,
+  },
+  { 'Mofiqul/dracula.nvim' },
+  { "uga-rosa/ccc.nvim" },
+  { "brenoprata10/nvim-highlight-colors",
+    config = function()
+      require("nvim-highlight-colors").setup({
+        render = 'background',
+        enable_named_colors = true,
+        enable_tailwind = true,
+      })
+    end
+
+  },
   -- {
   --   "folke/noice.nvim",
   --   event = "VimEnter",

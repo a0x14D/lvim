@@ -1,4 +1,4 @@
-lvim.colorscheme = "tokyonight"
+lvim.colorscheme = "dracula"
 lvim.log.level = "warn"
 lvim.builtin.alpha.active = true
 lvim.lsp.diagnostics.float.focusable = true
@@ -14,6 +14,7 @@ lvim.builtin.dap.active = true
 lvim.builtin.cmp.cmdline.enable = true
 lvim.builtin.cmp.window.documentation = true
 lvim.reload_config_on_save = true
+lvim.format_on_save = true
 lvim.builtin.cmp.window.completion = {
   border = "rounded",
   winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
