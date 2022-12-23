@@ -129,6 +129,17 @@ lvim.plugins = {
     end
 
   },
+  {
+    "jackMort/ChatGPT.nvim",
+    config = function()
+      require("chatgpt").setup({
+        -- optional configuration
+      })
+    end,
+    requires = {
+      "MunifTanjim/nui.nvim"
+    }
+  }
   -- {
   --   "folke/noice.nvim",
   --   event = "VimEnter",
