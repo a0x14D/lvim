@@ -97,15 +97,15 @@ lvim.plugins = {
       }
     end,
   },
-  {
-    "Pocco81/Auto-Save.nvim"
-  },
-  {
-    "max397574/better-escape.nvim",
-    config = function()
-      require("better_escape").setup()
-    end,
-  },
+  -- {
+  --   "Pocco81/Auto-Save.nvim"
+  -- },
+  -- {
+  --   "max397574/better-escape.nvim",
+  --   config = function()
+  --     require("better_escape").setup()
+  --   end,
+  -- },
   { "hrsh7th/cmp-cmdline" },
   { "fedepujol/move.nvim" },
   { "mg979/vim-visual-multi", branch = "master" },
